@@ -107,9 +107,13 @@ var input = []int {
 }
 
 func main() {
-	count := 0
+	result := 0
 	for i := 0; i < len(input); i++ {
-		count += (input[i] / 3) - 2
+		fuelCost := (input[i] / 3) - 2
+		for fuelCost > 0 {
+			result += fuelCost
+			fuelCost = (fuelCost / 3) - 2
+		}
 	}
-	fmt.Println("Count: ", count)
+	fmt.Println("result: ", result)
 }
