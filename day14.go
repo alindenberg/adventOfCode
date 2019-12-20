@@ -37,7 +37,7 @@ func main() {
 	// part 2 - brute forced by trying a few different values for fuelNeeded, until highest return
 	// value that was under a trillion. Ideally would implement a binary search to run on that between two
 	// given fuelNeeded values
-	fmt.Println("Part 2 - ", 13108426)
+	// fmt.Println("Part 2 - ", 13108426)
 }
 
 func getCostInBaseChemicals(
